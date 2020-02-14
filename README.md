@@ -86,6 +86,8 @@ See https://docs.python.org/3/library/codecs.html#standard-encodings for list of
 
 * `t2hk`: Traditional Chinese to Traditional Chinese (Hong Kong standard)
 
+* `t2hkp`: Traditional Chinese to Traditional Chinese (Hong Kong standard, with phrases)
+
 * `t2s`: Traditional Chinese to Simplified Chinese
 
 * `t2tw`: Traditional Chinese to Traditional Chinese (Taiwan standard)
@@ -93,6 +95,8 @@ See https://docs.python.org/3/library/codecs.html#standard-encodings for list of
 * `tw2s`: Traditional Chinese (Taiwan standard) to Simplified Chinese
 
 * `tw2sp`: Traditional Chinese (Taiwan standard) to Simplified Chinese (with phrases)
+
+* `t2jp`: Traditional Chinese to Japanese Kanji variants
 
 ## Issues 問題
 

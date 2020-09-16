@@ -166,7 +166,7 @@ class OpenCC:
     def set_conversion(self, conversion):
         """
         set conversion
-        :param conversion: the conversion of usage, options are
+        :param conversion: the conversion of usage, options include
          'hk2s', 's2hk', 's2t', 's2tw', 's2twp', 't2hk', 't2s', 't2tw', 'tw2s', and 'tw2sp'
          check the json file names in config directory
         :return: None
@@ -200,6 +200,9 @@ class TreeNode(object):
 
     def set_hint(self, hint):
         self.length_hint = hint
+
+
+############################################
 
 class StringTree(object):
     def __init__(self, string):
@@ -281,13 +284,16 @@ class StringTree(object):
         string_len = len(string)
         lstring = None
         rstring = None
+        # test_dict[0] is the length of the maximum entry
         test_len = min (string_len, test_dict[0])
         if hint:
             test_len = min (test_len, hint)
+        # test_dict[1] is the length of the minimum entry
         min_len = test_dict[1]
         while test_len >= min_len:
             # Loop through trying successively smaller substrings in the dictionary
             for i in range(0, string_len - test_len + 1):
+                # test_dict[1] is the set of the entry length
                 if string[i:i+test_len] in test_dict[2]:
                     # Match found.
                     if i > 0:

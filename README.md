@@ -74,9 +74,13 @@ See https://docs.python.org/3/library/codecs.html#standard-encodings for list of
 
 ### Conversions 轉換
 
-* `hk2s`: Traditional Chinese (Hong Kong standard) to Simplified Chinese
+* `hk2s`: Traditional Chinese (Hong Kong variant) to Simplified Chinese
 
-* `s2hk`: Simplified Chinese to Traditional Chinese (Hong Kong standard)
+* `hk2t`: Traditional Chinese (Hong Kong variant) to Traditional Chinese
+
+* `jp2t`: Japanese Kanji variants to Traditional Chinese
+
+* `s2hk`: Simplified Chinese to Traditional Chinese (Hong Kong variant)
 
 * `s2t`: Simplified Chinese to Traditional Chinese
 
@@ -84,15 +88,17 @@ See https://docs.python.org/3/library/codecs.html#standard-encodings for list of
 
 * `s2twp`: Simplified Chinese to Traditional Chinese (Taiwan standard, with phrases)
 
-* `t2hk`: Traditional Chinese to Traditional Chinese (Hong Kong standard)
+* `t2hk`: Traditional Chinese to Traditional Chinese (Hong Kong variant)
 
-* `t2hkp`: Traditional Chinese to Traditional Chinese (Hong Kong standard, with phrases)
+* `t2hkp`: Traditional Chinese to Traditional Chinese (Hong Kong variant, with phrases)
 
 * `t2s`: Traditional Chinese to Simplified Chinese
 
 * `t2tw`: Traditional Chinese to Traditional Chinese (Taiwan standard)
 
 * `tw2s`: Traditional Chinese (Taiwan standard) to Simplified Chinese
+
+* `tw2t`: Traditional Chinese (Taiwan standard) to Traditional Chinese
 
 * `tw2sp`: Traditional Chinese (Taiwan standard) to Simplified Chinese (with phrases)
 
